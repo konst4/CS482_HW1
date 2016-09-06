@@ -1,28 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<input type="button" class="btn btn-default btn-lg" value="Log In" onClick="passWord()">
-
-<script>
-function password() {
-  var testV = 1;
-  var pass1 = prompt('Enter Your Password', ' ');
-  while (testV < 3) {
-    if (!pass1)
-      history.go(-1);
-    if (pass1.toLowerCase() == "Guest") {
-      alert('Password Correct');
-      window.open("Yournextpage.html");
-      break;
-    }
-    testV += 1;
-    var pass1 =
-      prompt('Access Denied - Password Incorrect, Please Try Again.', 'Password');
-  }
-  if (pass1.toLowerCase() != "password" & testV == 3)
-    history.go(-1);
-  return " ";
-}
-</script>
   <head>
     <meta charset="UTF-8">
     <title>Cs482 hw1 by konst4</title>
@@ -134,9 +111,7 @@ cv2.imwrite('Edge_merge3.jpg',edge_merge3)<br>
 cv2.waitKey(0);<br>
 <br>
 cv2.destroyAllWindows()<br></p>
-<input type="text" name="password">
-<script>if(password){
-        }</script>
+
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
 

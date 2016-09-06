@@ -74,10 +74,10 @@ derivative_y2=cv2.Sobel(merged_sigma2,cv2.CV_64F,0,1,ksize=5)<br>
 derivative_y3=cv2.Sobel(merged_sigma3,cv2.CV_64F,0,1,ksize=5)<br>
 <br>
 #magnitude images<br>
-edge_original=cv2.Canny(src,100,100,5)<br>
-edge_merge1=cv2.Canny(merged_sigma1,100,100,5)<br>
-edge_merge2=cv2.Canny(merged_sigma2,100,100,5)<br>
-edge_merge3=cv2.Canny(merged_sigma3,100,100,5)<br>
+edge_original=cv2.Canny(src,50,50,5)<br>
+edge_merge1=cv2.Canny(merged_sigma1,50,50,5)<br>
+edge_merge2=cv2.Canny(merged_sigma2,50,50,5)<br>
+edge_merge3=cv2.Canny(merged_sigma3,50,50,5)<br>
 <br>
 #write images to filesystem<br>
 <br>

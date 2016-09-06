@@ -22,7 +22,7 @@
       <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CS 482 HW 1</h3>
 
-<p>The first step of the program is to load the original image. Then the resize operation will scale the image to 512x512.</p>
+<p>The first step of the program is to load the original image. Then the resize operation will scale, the image to 512x512.After this operation,the image needs to be split into three components using the split function. After this a Gaussian filter should be used. The kernel size that I defined is 15 by 15. The next step was to apply the filter using the different sigma values of 1,2,3 on the three different color component images. After applying the Filter. The next step was to merge the different components together to get the original image ,but smoothed with less noise. The greater the sigma value the more blurry the image becomes(less noisy). The next step was to take derivatives of these newly smoothed images as well as the original. OpenCV has a great function called Sobel. After getting the derivatives in the x and in the "y" direction. It was time to do some edge detection(hopefully this means magnitude of images). There is a function called Canny which uses the algorithm in class that we discussed. By changing the gradient size more detail can be either gained or lossed. The last part was to write all of our newly made images to files to share them . </p>
 
 <h3>
 <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
